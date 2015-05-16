@@ -24,13 +24,55 @@ class IdeaBoxApp < Sinatra::Base
   		erb :guess_number_game, :locals => {:number => number, :message => message}
   	end
 
-	post '/guess_number_game' do
-		num = rand(0..10)
-  		erb :guess_number_game
-  	end
+    get '/rock_paper_scissors_game' do
+      #0 = rock
+      #1 = paper
+      #2 = scissors
 
-  	get '/high_low_game' do
-  		erb :high_low_game
+      choice = params["pick"].to_i
+
+      pick = rand(3)
+      cpu = ""
+
+      if pick ==  0
+        cpu = "Rock"
+        if choice == 1
+          message = "You won"
+
+        elsif choice == pick
+          message = "You tied"
+        else
+          message = "You lost"
+        end
+
+      elsif pick ==  1
+        cpu = "Paper"
+        if choice == 2
+          message = "You won"
+        elsif choice == pick
+          message = "You tied"
+        else
+          message = "You lost"
+        end
+
+      else
+        cpu = "Scissors"
+        if choice == 0
+          message = "You won"
+        elsif choice == pick
+          message = "You tied"
+        else
+          message = "You lost"
+        end
+
+      end
+
+      erb :rock_paper_scissors_game, :locals => {:pick => pick, :message => message, :cpu => cpu}
+    end
+
+
+  	get '/tic_tac_toe_game' do
+  		erb :tic_tac_toe_game
   	end
 
   	  	get '/about_me' do

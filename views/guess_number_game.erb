@@ -1,13 +1,22 @@
 <html>
-  <head></head>
-  <body>
+  <head>
+  <link rel="stylesheet" type="text/css" href="stylesheets\guess_number_game.css">
+</head>
+  <body class="grad1">
     <p>
-      Guess the secret Number <br>
-      <%= message %>
+      <h1>Guess the secret Number </h1><br>
+      <h2><%= message %></h2>
     </p>
     <form>
-  <input type='text'/>
+  <input type='text'/><br><br>
   <input type="submit" id="submit" value="Click here to submit form">
 </form>
+
+    <a href="/">
+      <button type="button">
+       <br>
+        <span>Home</span>
+      </button>
+    </a>
   </body>
 </html>
