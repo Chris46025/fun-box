@@ -74,8 +74,4 @@ class IdeaBoxApp < Sinatra::Base
   	get '/tic_tac_toe_game' do
   		erb :tic_tac_toe_game
   	end
-
-  	  	get '/about_me' do
-  		erb :about_me
-  	end
 end

@@ -1,12 +1,8 @@
-html {
-    min-height: 100%
-}
-
-.grad1 {
-    background: linear-gradient(to bottom right, green, blue, black); /* Standard syntax (must be last) */
-}
-
 h1 {
+  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -23,7 +19,7 @@ form {
 button {
   width: 150px;
   height: 150px;
-  background: linear-gradient(to bottom right, red, yellow, red); /* Standard syntax (must be last) */
+  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
   padding: 10px 10px 10px !important;
   font-weight: bold;
   border-radius: 100px;
@@ -42,8 +38,47 @@ button:hover {
   box-shadow: 5px 5px 10px #666;
 }
 
+
+
+html {
+    min-height: 100%
+}
+
+h3 {
+  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+
+button:hover {
+  color: #000;
+  background-color: #EDEDED;
+  -webkit-box-shadow: 5px 5px 10px #666;
+  -moz-box-shadow: 5px 5px 10px #666;
+  box-shadow: 5px 5px 10px #666;
+}
+
 div {
     float: center;
     text-align:center;
 }
+
+.grad1 {
+    background: linear-gradient(to bottom left, red, black, blue); /* Standard syntax (must be last) */
+}
+
+.nav_bar{
+  background: linear-gradient(to bottom left, red, black, blue); /* Standard syntax (must be last) */
+  padding: 10px 10px 10px !important;
+  font-weight: bold;
+  border-radius: 100px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 3px solid black;
+  cursor: pointer;
+  outline-color: blue;
+}
+
+
 

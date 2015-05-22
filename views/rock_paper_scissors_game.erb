@@ -1,23 +1,30 @@
 <html>
   <head>
-  <link rel="stylesheet" type="text/css" href="stylesheets\guess_number_game.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets\rock_paper_scissors_game.css">
 </head>
+  <div class="nav_bar">
+      <h3>Antonio's Fun Box</h3>
+  </div>
+  
   <body class="grad1">
     <p>
       <h1>Rock Paper Sciccors </h1><br>
-      <h2><%= "The cpu picked " + cpu %> <br><%=message %></h2>
+      <h1><%= "The cpu picked " + cpu %> <br><%=message %></h1>
     </p>
-<form>
-  <button name="pick" type="submit" value="0">Rock</button>
-  <button name="pick" type="submit" value="1">Paper</button>
-  <button name="pick" type="submit" value="2">Sicissors</button>
-</form>
+<div>
+  <form>
+    <button name="pick" type="submit" value="0">Rock</button>
+    <button name="pick" type="submit" value="1">Paper</button>
+    <button name="pick" type="submit" value="2">Sicissors</button>
+  </form>
 
-    <a href="/">
-      <button type="button">
-       <br>
-        <span>Home</span>
-      </button>
-    </a>
+      <a href="/">
+        <button type="button">
+         <br>
+          <span>Home</span>
+        </button>
+      </a>
   </body>
+</div>
+
 </html>
