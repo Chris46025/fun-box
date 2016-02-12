@@ -2,31 +2,31 @@
   <head>
   <link rel="stylesheet" type="text/css" href="stylesheets\guess_number_game.css">
 </head>
-<br>
-<div class="nav_bar">
-  <h3>Antonio's Fun Box</h3>
-</div>
-<br>
 
-<div>
-  <body class="grad1">
-    <p>
+<body>
+<div class="content">
+  
       <h1>Guess the secret Number</h1>
-      <h1>(Pick a number between 1-10)</h1><br>
-      <h1><%= message %></h1>
-    </p>
+      <h2>(Pick a number between 1-10)</h2>
+      <h2><%= message %></h2>
     <form>
-  <input type='text'/><br><br>
-  <input type="submit" id="submit" value="Click here to submit form">
+  <input type='text' name="guess"><br><br>
+  <button type="submit"><span>Guess</span></button>
+  
 </form>
 
     <a href="/">
       <button type="button">
-       <br>
         <span>Home</span>
       </button>
     </a>
-  </body>
+  
 </div>
+<div class="footer">
+    <hr>
+    Copyright Antonio Bethune 2016
+ </div>
+</body>
+
 
 </html>

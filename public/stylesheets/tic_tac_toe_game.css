@@ -1,32 +1,28 @@
-body{
-
-	text-align:center;
-	
-}
-
 html {
-    min-height: 100%
+    min-height: 100%;
+    background-color: #e9eaed;
 }
 
 h3 {
-  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+  background-color: #333;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
+  font-family: 'Brush Script MT', cursive;
 }
 
 button {
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+  width: 30%;
+  height: 100%;
+  background-color: #e9eaed;
   padding: 10px 10px 10px !important;
   font-weight: bold;
-  border-radius: 100px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border: 2px solid black;
+  border: 1px solid black;
   cursor: pointer;
-  outline-color: blue;
+  font-size: 18px;
+  margin-left: 35%;
+  font-family: helvetica, arial, sans-serif;
+  color: #4e5665;
 }
 
 button:hover {
@@ -42,27 +38,20 @@ div {
     text-align:center;
 }
 
-.grad1 {
-    background: linear-gradient(to bottom right, red, blue, black); /* Standard syntax (must be last) */
+.content:after {
+  content: "";
+  display: block;
 }
 
-.nav_bar{
-  background: linear-gradient(to bottom left, red, black, blue); /* Standard syntax (must be last) */
-  padding: 10px 10px 10px !important;
-  font-weight: bold;
-  border-radius: 100px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border: 3px solid black;
-  cursor: pointer;
-  outline-color: blue;
+.footer, .content:after {
+  position:relative;
+  height: 30px;
+  width: 100%;
+  color: white;
+  margin-left: -10px;
 }
-
-.box{
-
-	text-align:left;
-	width:auto;
-	height:auto;
-	
+.footer{
+  bottom:-320px;
+  text-align:right;
+  color: #4e5665;
 }
-

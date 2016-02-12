@@ -11,17 +11,18 @@ class IdeaBoxApp < Sinatra::Base
   	end
 
   	get '/guess_number_game' do
-  		number = rand(10)
-  		guess = params[0].to_i
+      number = rand(10)
+      guess = params["guess"].to_i
   		if guess == number
   			message = "You got it right"
+        number = rand(10)
   		elsif guess > number
   			message = "You were too high"
   		else
   			message = "You were too low"
   		end
 
-  		erb :guess_number_game, :locals => {:number => number, :message => message}
+  		erb :guess_number_game, :locals => {:guess => guess, :number => number, :message => message}
   	end
 
     get '/rock_paper_scissors_game' do

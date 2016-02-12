@@ -1,15 +1,22 @@
-h1 {
-  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+h1 {  
+  background-color: #333;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: 'Brush Script MT', cursive;
   text-align: center;
+  color: 
 }
 
 h2{
-  font-size: 30px;
-  text-align: center; 
-  color: green;
+  background-color: #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  font-family: 'Brush Script MT', cursive;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  color: #4e5665;
 }
 
 form {
@@ -17,17 +24,18 @@ form {
 }
 
 button {
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+  width: 27%;
+  height: 7%;
+  padding: 10px 10px 10px !important;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #e9eaed;
   padding: 10px 10px 10px !important;
   font-weight: bold;
-  border-radius: 100px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border: 2px solid black;
-  cursor: pointer;
-  outline-color: blue;
+  border: 1px solid black;
+  font-size: 18px;
+  text-align: center;
+  color: #4e5665;
 }
 
 button:hover {
@@ -38,14 +46,33 @@ button:hover {
   box-shadow: 5px 5px 10px #666;
 }
 
+.button-round {
+  width: 150px;
+  height: 150px;
+  padding: 10px 10px 10px !important;
+  border-radius: 100px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #EDEDED;
+}
+
+.button-round:hover {
+  color: #000;
+  background-color: #EDEDED;
+  -webkit-box-shadow: 5px 5px 10px #666;
+  -moz-box-shadow: 5px 5px 10px #666;
+  box-shadow: 5px 5px 10px #666;
+}
+
 
 
 html {
-    min-height: 100%
+    min-height: 100%;
+    background-color: #e9eaed;
 }
 
 h3 {
-  background: linear-gradient(to bottom right, red, white, blue); /* Standard syntax (must be last) */
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -64,21 +91,21 @@ div {
     text-align:center;
 }
 
-.grad1 {
-    background: linear-gradient(to bottom left, red, black, blue); /* Standard syntax (must be last) */
+.content:after {
+  content: "";
+  display: block;
 }
 
-.nav_bar{
-  background: linear-gradient(to bottom left, red, black, blue); /* Standard syntax (must be last) */
-  padding: 10px 10px 10px !important;
-  font-weight: bold;
-  border-radius: 100px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border: 3px solid black;
-  cursor: pointer;
-  outline-color: blue;
+.footer, .content:after {
+  position:relative;
+  height: 30px;
+  width: 100%;
+  color: white;
+  margin-left: -10px;
 }
-
-
+.footer{
+  bottom:-320px;
+  text-align:right;
+  color: #4e5665;
+}
 

@@ -2,29 +2,25 @@
   <head>
   <link rel="stylesheet" type="text/css" href="stylesheets\rock_paper_scissors_game.css">
 </head>
-  <div class="nav_bar">
-      <h3>Antonio's Fun Box</h3>
-  </div>
-  
-  <body class="grad1">
+
+<body>
     <p>
-      <h1>Rock Paper Sciccors </h1><br>
-      <h1><%= "The cpu picked " + cpu %> <br><%=message %></h1>
+      <h1>Rock Paper Sciccors </h1>
+      <h2><%= "The cpu picked " + cpu %> <br><%=message %></h2>
     </p>
 <div>
   <form>
-    <button name="pick" type="submit" value="0">Rock</button>
-    <button name="pick" type="submit" value="1">Paper</button>
-    <button name="pick" type="submit" value="2">Sicissors</button>
+    <button class="button-round" name="pick" type="submit" value="0"><img src="pics/rock.png" style= "width:100px; height:100px; float: center;"></button>
+    <button class="button-round" name="pick" type="submit" value="1"><img src="pics/paper.png" style= "width:100px; height:100px; float: center;"></button>
+    <button class="button-round" name="pick" type="submit" value="2"><img src="pics/sciccors.png" style= "width:100px; height:100px; float: center;"></button>
   </form>
 
-      <a href="/">
-        <button type="button">
-         <br>
-          <span>Home</span>
-        </button>
-      </a>
-  </body>
+      <a href="/"><button type="button"><span>Home</span></button></a>
 </div>
+<div class="footer">
+    <hr>
+    &copy Antonio Bethune 2016
+ </div>
+</body>
 
 </html>
